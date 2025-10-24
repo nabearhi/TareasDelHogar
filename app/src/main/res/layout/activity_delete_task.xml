@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo3">
+
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Eliminar tarea"
+        android:textColor="@color/gris"
+        android:textStyle="bold"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextDeleteId" />
+
+    <EditText
+        android:id="@+id/editTextDeleteId"
+        android:layout_width="376dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="232dp"
+        android:hint="ID de la tarea"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="197dp"
+        android:layout_height="82dp"
+        android:text="Tareas del hogar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textStatusAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Eliminando Tarea...."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteTask"
+        app:layout_constraintVertical_bias="0.083" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
